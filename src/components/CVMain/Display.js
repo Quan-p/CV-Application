@@ -18,7 +18,7 @@ function DisplaySection(props) {
                     <span>Phone: </span> {props.phone}
                 </p>
             </div>
-        )
+        );
     }
 }
 

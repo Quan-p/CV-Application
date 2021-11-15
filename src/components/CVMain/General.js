@@ -49,7 +49,7 @@ const GeneralInfo = () => {
 
     return (
         <section>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
                     <p>First Name:</p>
                     <input
