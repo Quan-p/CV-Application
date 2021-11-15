@@ -11,7 +11,12 @@ const GeneralInfo = () => {
 
     const [edit, setEdit] = useState(true);
 
-    const { firstName, lastName, email, phone } = personalInfo;
+    const {
+        firstName,
+        lastName,
+        email,
+        phone,
+    } = personalInfo;
 
     const handleChange = (e) => {
         let value = e.target.value;
@@ -19,9 +24,9 @@ const GeneralInfo = () => {
         setPersonalInfo((preValue) => {
             return {
                 ...preValue,
-                [e.target.name]: value
-            }
-        })
+                [e.target.name]: value,
+            };
+        });
     };
 
     const handleSubmit = (e) => {
@@ -29,7 +34,7 @@ const GeneralInfo = () => {
         setEdit((prevMode) => !prevMode);
     };
 
-    if(!edit) {
+    if (!edit) {
         return (
             <TextSection
                 firstName={firstName}
@@ -38,7 +43,7 @@ const GeneralInfo = () => {
                 phone={phone}
                 handleEdit={handleSubmit}
             />
-        )
+        );
     }
 
     return (
@@ -47,20 +52,20 @@ const GeneralInfo = () => {
                 <p>First Name:</p>
                 <label>
                     <input
-                        type='text'
-                        name='firstName'
-                        placeholder='First Name'
+                        type="text"
+                        name="firstName"
+                        placeholder="First Name"
                         value={firstName}
                         onChange={handleChange}
                         required
                     />
                 </label>
-                <button type='submit'>
+                <button type="submit">
                     Save
                 </button>
             </form>
         </section>
     );
-}
+};
 
 export default GeneralInfo;
