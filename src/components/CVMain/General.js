@@ -11,7 +11,7 @@ const GeneralInfo = () => {
 
     const [edit, setEdit] = useState(true);
 
-    const { firstNme, lastName, email, phone } = personalInfo;
+    const { firstName, lastName, email, phone } = personalInfo;
 
     return (
         <section>
@@ -19,8 +19,10 @@ const GeneralInfo = () => {
                 <p>First Name:</p>
                 <label>
                     <input
-                        type='text'
-                        placeholder='First Name'
+                        type = 'text'
+                        placeholder = 'First Name'
+                        value = {firstName}
+                        required
                     />
                 </label>
             </form>
