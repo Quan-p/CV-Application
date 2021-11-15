@@ -49,13 +49,46 @@ const GeneralInfo = () => {
     return (
         <section>
             <form>
-                <p>First Name:</p>
                 <label>
+                    <p>First Name:</p>
                     <input
                         type="text"
                         name="firstName"
                         placeholder="First Name"
                         value={firstName}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
+                <label>
+                    <p>Last Name:</p>
+                    <input
+                        type="text"
+                        name="lastName"
+                        placeholder="Last Name"
+                        value={lastName}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
+                <label>
+                    <p>Email:</p>
+                    <input
+                        type="text"
+                        name="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
+                <label>
+                    <p>Phone Number:</p>
+                    <input
+                        type="text"
+                        name="phone"
+                        placeholder="Phone Number"
+                        value={phone}
                         onChange={handleChange}
                         required
                     />
