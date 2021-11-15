@@ -13,6 +13,17 @@ const GeneralInfo = () => {
 
     const { firstName, lastName, email, phone } = personalInfo;
 
+    const handleChange = (e) => {
+        let value = e.target.value;
+
+        setPersonalInfo((preValue) => {
+            return {
+                ...preValue,
+                [e.target.name]: value
+            }
+        })
+    }
+
     return (
         <section>
             <form>
@@ -22,6 +33,7 @@ const GeneralInfo = () => {
                         type = 'text'
                         placeholder = 'First Name'
                         value = {firstName}
+                        onChange = {handleChange}
                         required
                     />
                 </label>
