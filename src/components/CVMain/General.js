@@ -19,12 +19,12 @@ const GeneralInfo = () => {
     } = personalInfo;
 
     const handleChange = (e) => {
-        let value = e.target.value;
+        const { name, value } = e.target;
 
         setPersonalInfo((preValue) => {
             return {
                 ...preValue,
-                [e.target.name]: value,
+                [name]: value,
             };
         });
     };
