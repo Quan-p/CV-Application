@@ -32,11 +32,11 @@ const GeneralInfo = () => {
     if(!edit) {
         return (
             <TextSection
-                firstName = {firstName}
-                lastName = {lastName}
-                email = {email}
-                phone = {phone}
-                handleEdit = {handleSubmit}
+                firstName={firstName}
+                lastName={lastName}
+                email={email}
+                phone={phone}
+                handleEdit={handleSubmit}
             />
         )
     }
@@ -47,14 +47,17 @@ const GeneralInfo = () => {
                 <p>First Name:</p>
                 <label>
                     <input
-                        type = 'text'
-                        name = 'firstName'
-                        placeholder = 'First Name'
-                        value = {firstName}
-                        onChange = {handleChange}
+                        type='text'
+                        name='firstName'
+                        placeholder='First Name'
+                        value={firstName}
+                        onChange={handleChange}
                         required
                     />
                 </label>
+                <button type='submit'>
+                    Save
+                </button>
             </form>
         </section>
     );
