@@ -29,6 +29,18 @@ const GeneralInfo = () => {
         setEdit((prevMode) => !prevMode);
     };
 
+    if(!edit) {
+        return (
+            <TextSection
+                firstName = {firstName}
+                lastName = {lastName}
+                email = {email}
+                phone = {phone}
+                handleEdit = {handleSubmit}
+            />
+        )
+    }
+
     return (
         <section>
             <form>
