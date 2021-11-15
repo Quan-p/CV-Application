@@ -22,7 +22,12 @@ const GeneralInfo = () => {
                 [e.target.name]: value
             }
         })
-    }
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setEdit((prevMode) => !prevMode);
+    };
 
     return (
         <section>
@@ -31,6 +36,7 @@ const GeneralInfo = () => {
                 <label>
                     <input
                         type = 'text'
+                        name = 'firstName'
                         placeholder = 'First Name'
                         value = {firstName}
                         onChange = {handleChange}
