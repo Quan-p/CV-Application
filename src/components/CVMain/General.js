@@ -1,5 +1,6 @@
 /* eslint-disable react/function-component-definition */
 import React, { useState } from 'react';
+import DisplaySection from './Display';
 
 const GeneralInfo = () => {
     const [personalInfo, setPersonalInfo] = useState({
@@ -36,7 +37,7 @@ const GeneralInfo = () => {
 
     if (!edit) {
         return (
-            <TextSection
+            <DisplaySection
                 firstName={firstName}
                 lastName={lastName}
                 email={email}
