@@ -1,11 +1,23 @@
 /* eslint-disable react/function-component-definition */
 
-import React from 'react';
+import React, { useState } from 'react';
+import uniqid from 'uniqid';
 import GeneralInfo from './components/CVMain/General';
 import Education from './components/CVMain/Education';
 import Experience from './components/CVMain/Experience';
 
-function App() {
+const App = () => {
+    const [educationIds, setEducationIds] = useState([]);
+    const [experienceIds, setExperienceIds] = useState([]);
+
+    const handleClick = (type) => {
+        if (type === 'experienceIds') {
+            setExperienceIds((prevExpIds) => [...prevExpIds, uniqid()]);
+        } else {
+            setEducationIds((prevEduIds) => [...prevEduIds, uniqid()]);
+        }
+    };
+
     return (
         <div className="App">
             <main>
@@ -15,8 +27,16 @@ function App() {
                     <GeneralInfo/>
                 </div>
                 <div>
-                    <h2>Education</h2>
-                    <Education/>
+                    <Print>
+                        <h2>Education</h2>
+                        <Education/>
+                    </Print>
+                    <button
+                        type="button"
+                        className="addBtn"
+                        onClick={() => handleClick('educationIds')}>
+                        Add
+                    </button>
                 </div>
                 <div>
                     <h2>Experience</h2>
@@ -25,6 +45,6 @@ function App() {
             </main>
         </div>
     );
-}
+};
 
 export default App;

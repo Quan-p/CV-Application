@@ -111,7 +111,7 @@ const Experience = (props) => {
                 <button
                     className="formBtn"
                     type="button"
-                    onClick={() => handleDelete('educationIds', id)}>
+                    onClick={() => handleDelete('experienceIds', id)}>
                     Delete
                 </button>
             </form>
