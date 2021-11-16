@@ -40,8 +40,16 @@ const App = () => {
                     </button>
                 </div>
                 <div>
-                    <h2>Experience</h2>
-                    <Experience/>
+                    <Print>
+                        <h2>Experience</h2>
+                        <Experience/>
+                    </Print>
+                    <button
+                        type="button"
+                        className="addBtn"
+                        onClick={() => handleClick('experienceIds')}>
+                        Add
+                    </button>
                 </div>
             </main>
         </div>
