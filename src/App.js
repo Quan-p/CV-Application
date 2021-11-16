@@ -19,6 +19,27 @@ const App = () => {
         }
     };
 
+    const handleDelete = (type, id) => {
+        if (type === 'experienceIds') {
+            setExperienceIds((prevExpIds) => {
+                const newList = prevExpIds.filter((key) => key !== id);
+                return newList;
+            });
+        } else {
+            setEducationIds((prevEduIds) => {
+                const newList = prevEduIds.filter((key) => key !== id);
+                return newList;
+            });
+        };
+    };
+
+    const eduComponents = educationIds.map((id) => (
+        <Education key={id} id={id} handleDelete={handleDelete} />
+    ));
+    const expComponents = experienceIds.map((id) => (
+        <Experience key={id} id={id} handleDelete={handleDelete} />
+    ));
+
     return (
         <div className="App">
             <main>
@@ -31,6 +52,7 @@ const App = () => {
                     <Print>
                         <h2>Education</h2>
                         <Education/>
+                        {eduComponents}
                     </Print>
                     <button
                         type="button"
@@ -43,6 +65,7 @@ const App = () => {
                     <Print>
                         <h2>Experience</h2>
                         <Experience/>
+                        {expComponents}
                     </Print>
                     <button
                         type="button"
