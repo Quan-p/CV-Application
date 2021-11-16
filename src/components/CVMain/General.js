@@ -75,9 +75,9 @@ const GeneralInfo = () => {
                 <label>
                     <p>Email:</p>
                     <input
-                        type="text"
+                        type="email"
                         name="email"
-                        placeholder="Email"
+                        placeholder="example@gmail.com"
                         value={email}
                         onChange={handleChange}
                         required
@@ -86,7 +86,7 @@ const GeneralInfo = () => {
                 <label>
                     <p>Phone Number:</p>
                     <input
-                        type="text"
+                        type="tel"
                         name="phone"
                         placeholder="Phone Number"
                         value={phone}
