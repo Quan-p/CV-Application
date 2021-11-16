@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import uniqid from 'uniqid';
+import PrintProvider, { Print, NoPrint } from 'react-easy-print';
 import GeneralInfo from './components/CVMain/General';
 import Education from './components/CVMain/Education';
 import Experience from './components/CVMain/Experience';
