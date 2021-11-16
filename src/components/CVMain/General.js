@@ -22,12 +22,10 @@ const GeneralInfo = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
 
-        setPersonalInfo((preValue) => {
-            return {
-                ...preValue,
-                [name]: value,
-            };
-        });
+        setPersonalInfo((preValue) => ({
+            ...preValue,
+            [name]: value,
+        }));
     };
 
     const handleSubmit = (e) => {
