@@ -19,6 +19,49 @@ function DisplaySection(props) {
                 </p>
             </div>
         );
+    } else if (props.companyName) {
+        return (
+            <div class='displaySection'>
+                <span className='material-icons editIcon' onClick={props.handleEdit}>
+						create
+				</span>
+                <p>
+                    <span>Company Name: </span> {props.companyName}
+                </p>
+                <p>
+                    <span>Position: </span> {props.position}
+                </p>
+                <p>
+                    <span>From: </span> {props.from}
+                </p>
+                <p>
+                    <span>To: </span> {props.to}
+                </p>
+                <p>
+                    <span>Main Tasks: </span> {props.tasks}
+                </p>
+            </div>
+        );
+    } else {
+        return (
+            <div class='displaySection'>
+                <span className='material-icons editIcon' onClick={props.handleEdit}>
+						create
+				</span>
+                <p>
+                    <span>School Name: </span> {props.schoolName}
+                </p>
+                <p>
+                    <span>Position: </span> {props.study}
+                </p>
+                <p>
+                    <span>From: </span> {props.from}
+                </p>
+                <p>
+                    <span>To: </span> {props.to}
+                </p>
+            </div>
+        );
     }
 }
 
