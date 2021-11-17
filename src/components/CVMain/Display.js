@@ -1,10 +1,14 @@
+import { NoPrint } from "react-easy-print";
+
 function DisplaySection(props) {
     if (props.firstName) {
         return (
             <div class='displaySection'>
-                <span className='material-icons editIcon' onClick={props.handleEdit}>
+                <NoPrint>
+                    <span className='material-icons editIcon' onClick={props.handleEdit}>
 						create
-				</span>
+				    </span>
+                </NoPrint>
                 <p>
                     <span>First Name: </span> {props.firstName}
                 </p>
@@ -22,9 +26,11 @@ function DisplaySection(props) {
     } else if (props.companyName) {
         return (
             <div class='displaySection'>
-                <span className='material-icons editIcon' onClick={props.handleEdit}>
+                <NoPrint>
+                    <span className='material-icons editIcon' onClick={props.handleEdit}>
 						create
-				</span>
+				    </span>
+                </NoPrint>
                 <p>
                     <span>Company Name: </span> {props.companyName}
                 </p>
@@ -45,9 +51,11 @@ function DisplaySection(props) {
     } else {
         return (
             <div class='displaySection'>
-                <span className='material-icons editIcon' onClick={props.handleEdit}>
+                <NoPrint>
+                    <span className='material-icons editIcon' onClick={props.handleEdit}>
 						create
-				</span>
+				    </span>
+                </NoPrint>
                 <p>
                     <span>School Name: </span> {props.schoolName}
                 </p>

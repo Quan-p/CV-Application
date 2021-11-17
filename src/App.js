@@ -42,39 +42,53 @@ const App = () => {
 
     return (
         <div className="App">
-            <main>
-                <h1>CV Application</h1>
-                <div>
-                    <h2>General Information</h2>
-                    <GeneralInfo/>
-                </div>
-                <div>
-                    <Print>
-                        <h2>Education</h2>
-                        <Education/>
-                        {eduComponents}
-                    </Print>
-                    <button
-                        type="button"
-                        className="addBtn"
-                        onClick={() => handleClick('educationIds')}>
-                        Add
-                    </button>
-                </div>
-                <div>
-                    <Print>
-                        <h2>Experience</h2>
-                        <Experience/>
-                        {expComponents}
-                    </Print>
-                    <button
-                        type="button"
-                        className="addBtn"
-                        onClick={() => handleClick('experienceIds')}>
-                        Add
-                    </button>
-                </div>
-            </main>
+            <PrintProvider>
+                <NoPrint>
+                    <main>
+                        <h1>CV Application</h1>
+                        <Print>
+                            <div>
+                                <h2>General Information</h2>
+                                <GeneralInfo/>
+                            </div>
+                        </Print>
+                        <div>
+                            <Print>
+                                <h2>Education</h2>
+                                <Education/>
+                                {eduComponents}
+                            </Print>
+                            <button
+                                type="button"
+                                className="addBtn"
+                                onClick={() => handleClick('educationIds')}>
+                                Add
+                            </button>
+                        </div>
+                        <div>
+                            <Print>
+                                <h2>Experience</h2>
+                                <Experience/>
+                                {expComponents}
+                            </Print>
+                            <button
+                                type="button"
+                                className="addBtn"
+                                onClick={() => handleClick('experienceIds')}>
+                                Add
+                            </button>
+                        </div>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                window.print();
+                            }}
+                            className="printBtn">
+                            Print
+                        </button>
+                    </main>
+                </NoPrint>
+            </PrintProvider>
         </div>
     );
 };
