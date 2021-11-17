@@ -53,6 +53,9 @@ const Experience = (props) => {
 
     return (
         <NoPrint>
+            <Print printOnly className="errorMs>g">
+                Please fill out all fields.
+            </Print>
             <section>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="companyName">

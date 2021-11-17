@@ -1,6 +1,6 @@
 /* eslint-disable react/function-component-definition */
 import React, { useState } from 'react';
-import { NoPrint } from 'react-easy-print';
+import { Print, NoPrint } from 'react-easy-print';
 import DisplaySection from './Display';
 
 const GeneralInfo = () => {
@@ -48,6 +48,9 @@ const GeneralInfo = () => {
 
     return (
         <NoPrint>
+            <Print printOnly className="errorMs>g">
+                Please fill out all fields.
+            </Print>
             <section>
                 <form onSubmit={handleSubmit}>
                     <label>
