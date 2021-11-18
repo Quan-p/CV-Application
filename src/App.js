@@ -6,6 +6,8 @@ import PrintProvider, { Print, NoPrint } from 'react-easy-print';
 import GeneralInfo from './components/CVMain/General';
 import Education from './components/CVMain/Education';
 import Experience from './components/CVMain/Experience';
+import './styles/App.css';
+import './styles/Section.css';
 
 const App = () => {
     const [educationIds, setEducationIds] = useState([]);

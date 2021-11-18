@@ -1,0 +1,54 @@
+body, input, button {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-color:#424242;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    background-color: #424242;
+    color: #FAFAFA;
+    box-shadow: none;
+    border: solid 0.5px #FAFAFA;
+    border-radius: 10px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #131313;
+}
+
+input {
+    background-color: #FAFAFA;
+    border: solid 0.5px #FAFAFA;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #FAFAFA;
+}
+
+h2 {
+    color: #131313;
+}
+
+p {
+    color: #FAFAFA;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+.pageTitle {
+    text-align: center;
+}
+
+.sectionTitle {
+    border-bottom: solid 1px #686868;
+    text-align: center;
+}
