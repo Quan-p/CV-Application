@@ -4,44 +4,37 @@ body, input, button {
 
 body {
     background-color:#424242;
-}
-
-button {
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    background-color: #424242;
-    color: #FAFAFA;
-    box-shadow: none;
-    border: solid 0.5px #FAFAFA;
-    border-radius: 10px;
-    width: 100px;
-}
-
-button:hover {
-    background-color: #131313;
+    height: 90vh;
 }
 
 input {
     background-color: #FAFAFA;
     border: solid 0.5px #FAFAFA;
     border-radius: 5px;
+    width: 250px;
+    font-size: 20px;
 }
 
 h1 {
+    font-size: 40px;
     color: #FAFAFA;
+    margin: 10px;
 }
 
 h2 {
     color: #131313;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 p {
+    margin: 10px;
     color: #FAFAFA;
 }
 
 .material-icons {
     cursor: pointer;
+    float: right;
 }
 
 .pageTitle {
