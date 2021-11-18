@@ -32,7 +32,7 @@ const App = () => {
                 const newList = prevEduIds.filter((key) => key !== id);
                 return newList;
             });
-        };
+        }
     };
 
     const eduComponents = educationIds.map((id) => (
@@ -51,13 +51,12 @@ const App = () => {
                         <Print>
                             <div>
                                 <h2 className="sectionTitle">General Information</h2>
-                                <GeneralInfo/>
+                                <GeneralInfo />
                             </div>
                         </Print>
                         <div>
                             <Print>
                                 <h2 className="sectionTitle">Education</h2>
-                                <Education/>
                                 {eduComponents}
                             </Print>
                             <button
@@ -70,7 +69,6 @@ const App = () => {
                         <div>
                             <Print>
                                 <h2 className="sectionTitle">Experience</h2>
-                                <Experience/>
                                 {expComponents}
                             </Print>
                             <button
