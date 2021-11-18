@@ -45,16 +45,16 @@ const App = () => {
             <PrintProvider>
                 <NoPrint>
                     <main>
-                        <h1>CV Application</h1>
+                        <h1 className="pageTitle">CV Application</h1>
                         <Print>
                             <div>
-                                <h2>General Information</h2>
+                                <h2 className="sectionTitle">General Information</h2>
                                 <GeneralInfo/>
                             </div>
                         </Print>
                         <div>
                             <Print>
-                                <h2>Education</h2>
+                                <h2 className="sectionTitle">Education</h2>
                                 <Education/>
                                 {eduComponents}
                             </Print>
@@ -67,7 +67,7 @@ const App = () => {
                         </div>
                         <div>
                             <Print>
-                                <h2>Experience</h2>
+                                <h2 className="sectionTitle">Experience</h2>
                                 <Experience/>
                                 {expComponents}
                             </Print>

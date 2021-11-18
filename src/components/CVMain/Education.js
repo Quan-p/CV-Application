@@ -55,7 +55,7 @@ const Education = (props) => {
                 Please fill out all fields.
             </Print>
             <section>
-                <form onSubmit={handleSubmit}>
+                <form className="formSection" onSubmit={handleSubmit}>
                     <label htmlFor="schoolName">
                         <p>First Name:</p>
                         <input
@@ -100,7 +100,7 @@ const Education = (props) => {
                             required
                         />
                     </label>
-                    <button type="submit">
+                    <button className="formBtn" type="submit">
                         Save
                     </button>
                     <button

@@ -10,16 +10,16 @@ function DisplaySection(props) {
 				    </span>
                 </NoPrint>
                 <p>
-                    <span>First Name: </span> {props.firstName}
+                    <span className="sectionText">First Name: </span> {props.firstName}
                 </p>
                 <p>
-                    <span>Last Name: </span> {props.lastName}
+                    <span className="sectionText">Last Name: </span> {props.lastName}
                 </p>
                 <p>
-                    <span>Email: </span> {props.email}
+                    <span className="sectionText">Email: </span> {props.email}
                 </p>
                 <p>
-                    <span>Phone: </span> {props.phone}
+                    <span className="sectionText">Phone: </span> {props.phone}
                 </p>
             </div>
         );
@@ -32,19 +32,19 @@ function DisplaySection(props) {
 				    </span>
                 </NoPrint>
                 <p>
-                    <span>Company Name: </span> {props.companyName}
+                    <span className="sectionText">Company Name: </span> {props.companyName}
                 </p>
                 <p>
-                    <span>Position: </span> {props.position}
+                    <span className="sectionText">Position: </span> {props.position}
                 </p>
                 <p>
-                    <span>From: </span> {props.from}
+                    <span className="sectionText">From: </span> {props.from}
                 </p>
                 <p>
-                    <span>To: </span> {props.to}
+                    <span className="sectionText">To: </span> {props.to}
                 </p>
                 <p>
-                    <span>Main Tasks: </span> {props.tasks}
+                    <span className="sectionText">Main Tasks: </span> {props.tasks}
                 </p>
             </div>
         );
@@ -57,16 +57,16 @@ function DisplaySection(props) {
 				    </span>
                 </NoPrint>
                 <p>
-                    <span>School Name: </span> {props.schoolName}
+                    <span className="sectionText">School Name: </span> {props.schoolName}
                 </p>
                 <p>
-                    <span>Position: </span> {props.study}
+                    <span className="sectionText">Position: </span> {props.study}
                 </p>
                 <p>
-                    <span>From: </span> {props.from}
+                    <span className="sectionText">From: </span> {props.from}
                 </p>
                 <p>
-                    <span>To: </span> {props.to}
+                    <span className="sectionText">To: </span> {props.to}
                 </p>
             </div>
         );

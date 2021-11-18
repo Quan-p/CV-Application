@@ -57,7 +57,7 @@ const Experience = (props) => {
                 Please fill out all fields.
             </Print>
             <section>
-                <form onSubmit={handleSubmit}>
+                <form className="formSection" onSubmit={handleSubmit}>
                     <label htmlFor="companyName">
                         <p>Company Name:</p>
                         <input
@@ -110,7 +110,7 @@ const Experience = (props) => {
                         onChange={handleChange}
                         required
                     />
-                    <button type="submit">
+                    <button className="formBtn" type="submit">
                         Save
                     </button>
                     <button

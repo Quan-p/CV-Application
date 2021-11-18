@@ -52,7 +52,7 @@ const GeneralInfo = () => {
                 Please fill out all fields.
             </Print>
             <section>
-                <form onSubmit={handleSubmit}>
+                <form className="formSection" onSubmit={handleSubmit}>
                     <label>
                         <p>First Name:</p>
                         <input
@@ -97,7 +97,7 @@ const GeneralInfo = () => {
                             required
                         />
                     </label>
-                    <button type="submit">
+                    <button className="formBtn" type="submit">
                         Save
                     </button>
                 </form>
