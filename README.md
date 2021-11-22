@@ -18,4 +18,4 @@ This CV application project was part of the self-taught education of The Odin Pr
 - Save and edit buttons to quickly change information
 - Utilize react easy print to either print or save as PDF with a click of a button
 
-![main](https://github.com/[Quan-p]/[CV-Application]/blob/main/images/main.png?raw=true)
+![main](/images/main.png?raw=true)
