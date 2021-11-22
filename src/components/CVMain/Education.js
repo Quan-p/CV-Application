@@ -51,7 +51,7 @@ const Education = (props) => {
 
     return (
         <NoPrint>
-            <Print printOnly className="errorMs>g">
+            <Print printOnly className="errorMsg">
                 Please fill out all fields.
             </Print>
             <section>
